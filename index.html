@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字遊戲</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 開始介面 -->
+    <div id="start-screen" class="screen active">
+      <h1>歡迎來到文字遊戲</h1>
+      <button id="start-game-btn" class="main-btn">開始遊戲</button>
+      <button id="continue-game-btn" class="main-btn">繼續遊戲</button>
+      <button id="exit-game-btn" class="main-btn">結束遊戲</button>
+    </div>
+  
+    <div id="game-screen" style="display: none;">
+        <div id="subtitle-container">
+            <div id="utility-buttons">
+                <button id="inventory-btn" class="utility-btn">背包</button>
+                <button id="save-exit-btn" class="utility-btn">儲存並離開</button>
+            </div>
+             <!-- 新增用於顯示說話者的元素 -->
+            <div id="speaker" class="speaker"></div>
+            <div id="subtitle"></div>
+        </div>
+        <div id="actions">
+            <button class="choice-btn">選項 1</button>
+            <button class="choice-btn">選項 2</button>
+            <button class="choice-btn">選項 3</button>
+            <button class="choice-btn">選項 4</button>
+        </div>
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
